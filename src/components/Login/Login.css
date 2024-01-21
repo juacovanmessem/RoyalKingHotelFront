@@ -2,4 +2,38 @@
   border-radius: 1rem;
   background-color: #0f1c3f;
   box-shadow: 1px 1px 5px #403fad;
+  max-width: 600px;
+}
+
+.logo{
+  height: 200px;
+}
+
+.buttonHover:hover{
+  animation: buttonAnimation 0.9s both infinite;
+}
+
+@keyframes buttonAnimation {
+  0%{
+    transform: scale3d(1, 1, 1);
+  }
+  50%{
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100%{
+    transform: scale3d(1, 1, 1.2);
+  }
+}
+
+.yellowLetters{
+  color:#d7bc77
+}
+
+.yellowBG{
+  background-color: #d7bc77;
+}
+
+.darkBlueBG{
+  background-color: #0f1c3f;
+  border-color: #0f1c3f;
 }
