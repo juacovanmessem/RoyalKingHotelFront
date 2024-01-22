@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Logo from "../../images/Logo_completo.png"
 import { NavLink } from 'react-router-dom'
@@ -22,7 +23,9 @@ const Login = () => {
             <Form.Control type="password" placeholder="Ingrese su contraseña" minLength={6} maxLength={20} required/>
           </Form.Group>
           <NavLink className='d-block p-0 mb-4 link-underline link-underline-opacity-0 linkLetters' to='/home'> ¿Olvidaste tu contraseña? </NavLink>
-          <NavLink className='me-3 buttonHover yellowBG btn' to='/home'>Iniciar sesión</NavLink>
+          <Button variant="warning" type="submit" className='me-3 buttonHover yellowBG'>
+            Iniciar sesión
+          </Button>
           <NavLink className='linkLetters' to='/home'>Crear una nueva cuenta </NavLink>
         </Form>
       </div>
