@@ -17,6 +17,12 @@ const PersonalFooter = () => {
              <li className="m-2 fs-4"><a href="#"><i className="bi bi-twitter-x text-light"></i></a></li>
            </ul> 
          </div>
+         <div className="text-center footer-text col-12 col-md col-sm-6 mb-2">
+           <p>Av. Aconquija 1368 - Yerba buena, Tucumán</p>
+           <p>Telefono: (381) 4353257</p>
+           <p>Mail: RoyalKingHotel@gmail.com</p>
+         </div>
+        
          
          <div className="col-xl-4 col-sm-6 col-md-8 col-lg-3 mb-3 text-light">
            <Form className='p-4'>

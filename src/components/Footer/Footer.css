@@ -2,3 +2,10 @@
   background-color: #0f1c3f;
 
 }
+.footer-text{
+  color: white;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  margin-top: 40px;
+}
