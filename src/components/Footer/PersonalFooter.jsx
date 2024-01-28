@@ -33,7 +33,7 @@ const PersonalFooter = () => {
                <Form.Control type="email" placeholder="Ingrese su correo" minLength={12} maxLength={64} required/>
              </Form.Group>
              <Button variant="warning" type="submit" className='me-3 buttonHover yellowBG'>
-               Iniciar sesión
+               Suscríbete
              </Button>
            </Form>
          </div>
