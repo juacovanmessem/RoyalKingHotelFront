@@ -26,7 +26,7 @@ const Login = () => {
           <Button variant="warning" type="submit" className='me-3 buttonHover yellowBG'>
             Iniciar sesión
           </Button>
-          <NavLink className='linkLetters' to='/home'>Crear una nueva cuenta </NavLink>
+          <NavLink className='linkLetters' to='/register'>Crear una nueva cuenta </NavLink>
         </Form>
       </div>
       <div className='d-flex justify-content-center mb-4'>
