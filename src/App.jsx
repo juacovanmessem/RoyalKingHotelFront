@@ -12,6 +12,8 @@ function App() {
         <Route path='/' element={<Navigate to='home' replace/>} />
         <Route path='home' element={<Landing />} />
         <Route path='login' element={<Login />} />
+        <Route path='login' element={<PersonalNavbar />} />
+        
 
       </Routes>
     </>
