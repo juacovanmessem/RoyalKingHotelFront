@@ -18,22 +18,34 @@
     transform: scale3d(1, 1, 1);
   }
   50%{
-    transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.05, 1.05, 1);
   }
   100%{
     transform: scale3d(1, 1, 1.2);
   }
 }
 
-.yellowLetters{
+.linkLetters{
   color:#d7bc77
+}
+
+.linkLetters:hover{
+  color:#fdcd54
 }
 
 .yellowBG{
   background-color: #d7bc77;
 }
+.yellowBG:hover{
+  background-color: #d7bc77;
+}
 
 .darkBlueBG{
+  background-color: #0f1c3f;
+  border-color: #0f1c3f;
+}
+
+.darkBlueBG:hover{
   background-color: #0f1c3f;
   border-color: #0f1c3f;
 }

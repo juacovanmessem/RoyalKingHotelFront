@@ -1,15 +1,23 @@
 import './App.css'
-import PersonalFooter from './components/Footer/PersonalFooter'
+import { Navigate, Route, Routes} from 'react-router-dom'
+import Landing from './components/Landing/Landing'
 import Login from './components/Login/Login'
-import PersonalNavbar from './components/Navbar/PersonalNavbar'
 import Contacto from './components/Contacto/Contacto'
+import Register from './components/Register/Register'
 
 function App() {
 
   return (
     <>
-    < Contacto />
 
+      <Routes>
+        <Route path='/' element={<Navigate to='home' replace/>} />
+        <Route path='home' element={<Landing/>} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
+        <Route path='register' element={<Contacto />} />
+
+      </Routes>
     </>
   )
 }
