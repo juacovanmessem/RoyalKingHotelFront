@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import LogoNav from '../../images/Logo_Navbar.png';
+import LogoNav from '../../images/Logo_navbar.png';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 
@@ -9,7 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 const PersonalNavbar = () => {
   return (
     <>
-      
+     
      <nav className='navbar text-light navbar-expand-lg p-3 sticky-top' expand="lg">
        <div className='container-fluid'>
          <img src={LogoNav} alt="Royal King Hotel Logo"  className='img-responsive logoNav'></img>
