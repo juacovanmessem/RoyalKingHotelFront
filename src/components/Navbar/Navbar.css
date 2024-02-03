@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .nav-list {
   list-style: none;
@@ -21,8 +22,12 @@
   font-weight: bold;
 }
 
-.logoNav{
-  width: 150px;
-  height: 150px;
+.title{
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+#p{
+  text-align: left;
 
 }
