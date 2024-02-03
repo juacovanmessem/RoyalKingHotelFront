@@ -1,5 +1,3 @@
-import React from 'react'
-import PersonalNavbar from '../Navbar/PersonalNavbar'
 import React from 'react';
 import '../Landing/Landing.css'
 import PersonalNavbar from '../Navbar/PersonalNavbar';
@@ -23,7 +21,6 @@ import Pile3 from '../../images/pile3.jpg'
 function Landing() {
   return (
     <>
-  
       <PersonalNavbar/>
       <div className='text-light min-vh-100 max-vw-100 '>
         <section className='row g-0 align-items-center max-vh-50'>
