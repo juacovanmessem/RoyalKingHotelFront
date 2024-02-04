@@ -42,6 +42,7 @@ const Contacto = () => {
       <Container>
        <Form>
          <h3 className='text-center text-light'>Formulario de contacto via E-mail</h3>
+         <hr></hr>
          <Row className="mb-3">
            <Form.Group as={Col} controlId="FormGridName">
              <Form.Label className='text-light'>Nombre: </Form.Label>
@@ -76,7 +77,7 @@ const Contacto = () => {
          </Row>
          <Form.Group as={Col} controlId="formGridMensaje" >
             <Form.Label className='text-light'>Mensaje:</Form.Label>
-            <Form.Control type="text" placeholder="Escribe un mensaje" id='mensaje'/>
+            <Form.Control type="text" as="textarea" rows={5}  placeholder="Escribe un mensaje" id='mensaje'/>
          </Form.Group>
          <br></br>
          <Form.Group className="mb-3" id="formGridCheckbox">
