@@ -11,6 +11,27 @@ import Container from 'react-bootstrap/Container';
 
 
 const Contacto = () => {
+  const enviarMail = () =>  {
+    const name = document.getElementById('nombre').value
+    const email = document.getElementById('email').value
+    const mensaje = document.getElementById('mensaje').value
+    const motivo = document.getElementById('motivo').value
+
+  
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "m.belenmartinez99@gmail.com",
+      Password : "A226829DD57847DFE1A09F6BB5BDA50EDADF",
+      To : 'm.belenmartinez99@gmail.com',
+      From : "m.belenmartinez99@gmail.com",
+      Subject : `¡${name} a enviado una consulta!`,
+      Body : `A traves del mail: ${email}, nos envìa el siguiente mensaje: ${mensaje} con el motivo: ${motivo}`
+    
+    }).then(); 
+    const myModal = new bootstrap.Modal(document.getElementById('ModalFuncional'), {});
+      myModal.show()
+  }
+
   return (
     <>
       <PersonalNavbar/>
@@ -22,7 +43,7 @@ const Contacto = () => {
          <Row className="mb-3">
            <Form.Group as={Col} controlId="FormGridName">
              <Form.Label className='text-light'>Nombre: </Form.Label>
-             <Form.Control type="text" placeholder="Ingrese su nombre" minLength={2} maxLength={30} required/>
+             <Form.Control type="text" id='name' placeholder="Ingrese su nombre" minLength={2} maxLength={30} required/>
            </Form.Group>
            <Form.Group as={Col} controlId="FormGridName">
              <Form.Label className='text-light'>Apellido: </Form.Label>
@@ -30,13 +51,13 @@ const Contacto = () => {
            </Form.Group>
            <Form.Group as={Col} controlId="formGridNumero">
               <Form.Label  className='text-light'>Numero de reserva:</Form.Label>
-              <Form.Control />
+              <Form.Control type='number' placeholder="Ingrese su numero de reserva"  />
             </Form.Group>
          </Row>
 
          <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridMotivo">
-             <Form.Label className='text-light'>Motivo:</Form.Label>
+             <Form.Label className='text-light' id='motivo'>Motivo:</Form.Label>
              <Form.Select defaultValue="">
                <option>Olvide mi usuario y contraseña</option>
                <option>Quisiera recibir asistencia para realizar una reserva</option>
@@ -60,7 +81,7 @@ const Contacto = () => {
            <Form.Check type="checkbox" label="Deseo recibir información sobre promociones y lanzamientos" className='text-light' />
          </Form.Group>
 
-         <Button variant="primary" type="submit" className='mb-2 yellowBG'>
+         <Button variant="primary" type="submit" className='mb-2 yellowBG'onclick="enviarMail()">
            Enviar
          </Button>
        </Form>
