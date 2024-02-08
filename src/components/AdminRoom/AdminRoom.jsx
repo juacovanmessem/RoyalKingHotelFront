@@ -89,12 +89,12 @@ function AdminRoom() {
         data.habitaciones.forEach(habitacion => {
           const roomTR = document.createElement('tr');
           roomTR.innerHTML = `
-          <td>'${habitacion.nurmoHab}'</td>
+          <td>'${habitacion.numeroHab}'</td>
           <td>'${habitacion.tipoHab}'</td>
           <td>'${habitacion.precio}'</td>
           <td>'${habitacion.estado}'</td>
           <td><div className='d-flex justify-content-evenly'><i className="bi bi-pencil-square"></i><i className="bi bi-trash3-fill"></i></div></td>
-          <td><Button className='me-3 buttonHover yellowBG btn btn-warning' id='${habitacion.nurmoHab}'>Ver reserva</Button></td>
+          <td><Button className='me-3 buttonHover yellowBG btn btn-warning' id='${habitacion.numeroHab}'>Ver reserva</Button></td>
           `;
           roomTable.appendChild(roomTR);
         });
