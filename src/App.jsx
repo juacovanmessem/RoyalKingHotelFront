@@ -6,6 +6,7 @@ import Contacto from './components/Contacto/Contacto'
 import Register from './components/Register/Register'
 import Catalogo from './components/Catalogo/Catalogo'
 import AdminPage from './components/AdminPage/AdminPage'
+import Error404 from './components/Error404/Error404'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <Route path='Catalogo' element={<Catalogo />} />
         <Route path='admin' element={<AdminPage />} />
         <Route path='Contacto' element={<Contacto />} />
+        <Route path='Error404' element={<Error404 />} />
+
       </Routes>
 
     </>
