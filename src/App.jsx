@@ -7,6 +7,7 @@ import Register from './components/Register/Register'
 import Catalogo from './components/Catalogo/Catalogo'
 import AdminPage from './components/AdminPage/AdminPage'
 import Error404 from './components/Error404/Error404'
+import SobreNosotros from './components/SobreNosotros/SobreNosotros'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='admin' element={<AdminPage />} />
         <Route path='Contacto' element={<Contacto />} />
         <Route path='Error404' element={<Error404 />} />
+        <Route path='SobreNosotros' element={<SobreNosotros />} />
 
       </Routes>
 
