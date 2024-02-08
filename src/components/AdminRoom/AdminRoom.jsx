@@ -75,6 +75,32 @@ function AdminRoom() {
   
   const [imageUrls, setImageUrls] = useState(['']);
 
+  useEffect(() => {
+    showTable()
+  }, []);
+
+  const showTable = () => {
+    fetch('http://localhost:4000/habitaciones')
+      .then(response => response.json())
+      .then(data => {
+        const roomTable = document.getElementById('roomTable');
+
+        // Iterar sobre las habitaciones y mostrar la información
+        data.habitaciones.forEach(habitacion => {
+          const roomTR = document.createElement('tr');
+          roomTR.innerHTML = `
+          <td>'${habitacion.nurmoHab}'</td>
+          <td>'${habitacion.tipoHab}'</td>
+          <td>'${habitacion.precio}'</td>
+          <td>'${habitacion.estado}'</td>
+          <td><div className='d-flex justify-content-evenly'><i className="bi bi-pencil-square"></i><i className="bi bi-trash3-fill"></i></div></td>
+          <td><Button className='me-3 buttonHover yellowBG btn btn-warning' id='${habitacion.nurmoHab}'>Ver reserva</Button></td>
+          `;
+          roomTable.appendChild(roomTR);
+        });
+      })
+      .catch(error => console.error(error));
+  };
 
   return (
     <>
@@ -191,7 +217,7 @@ function AdminRoom() {
               <th>Reserva</th>
             </tr>
           </thead>
-          <tbody  controlId='roomTable'>
+          <tbody  id='roomTable'>
             <tr className='h-auto'>
               <td>1000</td>
               <td>Simple</td>
