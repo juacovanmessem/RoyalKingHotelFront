@@ -5,7 +5,7 @@ import Login from './components/Login/Login'
 import Contacto from './components/Contacto/Contacto'
 import Register from './components/Register/Register'
 import Catalogo from './components/Catalogo/Catalogo'
-import Contacto from './components/Catalogo/Contacto'
+
 
 function App() {
 
@@ -19,9 +19,6 @@ function App() {
         <Route path='register' element={<Register />} /> 
         <Route path='Catalogo' element={<Catalogo />} />
         <Route path='Contacto' element={<Contacto />} />
-
-
-        
 
       </Routes>
     </>

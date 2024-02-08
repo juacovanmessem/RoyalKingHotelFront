@@ -1,0 +1,19 @@
+.ContainerCatalogo{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.card{
+  margin: 2rem 1rem;
+  box-shadow: 2px 1px 15px -1px;
+  padding: 5px;
+  background-color: #0f1c3f;
+  
+}
+.card:hover {
+  transform: scale(1.1);
+  }
+
+ 
