@@ -25,6 +25,8 @@ const Login = () => {
 
     console.log(response)
 
+    reset()
+
   }
 
   return (

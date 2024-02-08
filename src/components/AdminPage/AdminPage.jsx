@@ -1,11 +1,11 @@
 import React from 'react'
-import AdminNavbar from '../AdminNavbar/AdminNavbar'
 import AdminRoom from '../AdminRoom/AdminRoom'
+import PersonalNavbar from '../Navbar/PersonalNavbar.jsx'
 
 function AdminPage() {
   return (
     <>
-      <AdminNavbar/>
+      <PersonalNavbar/>
       <AdminRoom/>
       
       
